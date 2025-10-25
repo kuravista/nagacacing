@@ -1,0 +1,70 @@
+openapi: 3.0.3
+info:
+  title: NagaCacing Public Data API
+  version: 1.0.0
+servers:
+  - url: https://cdn.nagacacing.com
+paths:
+  /data/data.json:
+    get:
+      summary: Get current market visualization dataset
+      operationId: getDataJson
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DataResponse'
+components:
+  schemas:
+    Group:
+      type: object
+      required: [groupId, groupName, tickers]
+      properties:
+        groupId: { type: string }
+        groupName: { type: string }
+        tickers:
+          type: array
+          items: { type: string }
+    Ticker:
+      type: object
+      required: [symbol, name, price, changePct, volume, marketCap, sector]
+      properties:
+        symbol: { type: string }
+        name: { type: string }
+        price: { type: number }
+        changePct: { type: number }
+        volume: { type: number }
+        marketCap: { type: number }
+        groupId: { type: [ 'string', 'null' ] }
+        sector: { type: string }
+        spark7:
+          type: array
+          maxItems: 7
+          items: { type: number }
+    Stats:
+      type: object
+      required: [universeSize, volumeAvgWindowDays, minMarketCap, maxMarketCap]
+      properties:
+        universeSize: { type: integer }
+        volumeAvgWindowDays: { type: integer }
+        minMarketCap: { type: integer }
+        maxMarketCap: { type: integer }
+    DataResponse:
+      type: object
+      required: [version, generatedAt, dataDelayMinutes, dailyStory, groups, tickers, stats]
+      properties:
+        version: { type: string }
+        generatedAt: { type: string, format: date-time }
+        dataDelayMinutes: { type: integer }
+        dailyStory: { type: string, maxLength: 140 }
+        groups:
+          type: array
+          items: { $ref: '#/components/schemas/Group' }
+        tickers:
+          type: array
+          items: { $ref: '#/components/schemas/Ticker' }
+        stats:
+          $ref: '#/components/schemas/Stats'
+

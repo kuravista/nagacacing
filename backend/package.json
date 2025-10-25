@@ -1,0 +1,42 @@
+{
+  "name": "nagacacing-backend",
+  "version": "1.0.0",
+  "description": "Backend data generator for NagaCacing MVP",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/cron.ts",
+    "build": "tsc",
+    "start": "node dist/src/cron.js",
+    "generate": "tsx src/build/generateDataJson.ts",
+    "fetch": "tsx src/fetch/yahoo.ts",
+    "upload": "tsx src/upload/r2.ts",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "yahoo-finance2": "^2.3.10",
+    "@aws-sdk/client-s3": "^3.432.0",
+    "zod": "^3.22.4",
+    "p-limit": "^5.0.0",
+    "winston": "^3.11.0",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "tsx": "^4.0.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "prettier": "^3.0.3",
+    "vitest": "^0.34.6"
+  }
+}

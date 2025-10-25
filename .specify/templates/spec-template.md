@@ -65,6 +65,13 @@
 
 [Add more user stories as needed, each with an assigned priority]
 
+### Accessibility & UX Acceptance
+
+- Conforms to design system components and tokens
+- Meets WCAG 2.1 AA: keyboard navigation, contrast ≥4.5:1, focus management
+- Defines empty, loading, and error states consistently
+- Lists supported platforms/browsers/devices
+
 ### Edge Cases
 
 <!--
@@ -89,6 +96,13 @@
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
+
+### Non-Functional Requirements (Constitution-aligned)
+
+- **NFR-Perf**: Define performance budgets (e.g., backend p95 < 200ms; frontend TTI < 2s on 4G)
+- **NFR-Obs**: Emit logs/metrics/traces for critical flows
+- **NFR-Test**: Provide acceptance tests for P1 journeys; ensure deterministic execution
+- **NFR-UX**: Adhere to design system and accessibility criteria
 
 *Example of marking unclear requirements:*
 

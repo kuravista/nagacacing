@@ -23,15 +23,20 @@
 **Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
 **Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
 **Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
+**Performance Goals**: [domain-specific; include budgets per Constitution IV, e.g., p95 latency, FPS]  
+**Constraints**: [e.g., <200ms p95 backend, <100MB memory, a11y WCAG 2.1 AA, i18n]  
 **Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+[Confirm ALL apply or document exception with RFC link]
+- Code Quality: formatter/linter/typecheck in CI; API docs/typing present
+- Testing: deterministic suite; ≥80% overall, ≥90% diff coverage; tests for P1 flows
+- UX Consistency: design system used; WCAG 2.1 AA acceptance criteria captured
+- Performance: feature budgets defined and validation approach planned
+- Security/Deps: vulnerability scan enabled; secrets policy respected
 
 ## Project Structure
 

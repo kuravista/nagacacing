@@ -1,0 +1,156 @@
+[
+  {
+    "idgroup": 1,
+    "name": "Grup Barito Pacific",
+    "tickers": ["BREN", "TPIA", "CUAN", "BRPT", "PTRO"],
+    "sectors": ["Energi (Baru & Batubara)", "Petrokimia"],
+    "keyPeople": "Prajogo Pangestu"
+  },
+  {
+    "idgroup": 2,
+    "name": "Djarum Group",
+    "tickers": ["BBCA", "TOWR"],
+    "sectors": ["Perbankan", "Menara Telekomunikasi"],
+    "keyPeople": "Keluarga Hartono (Budi & Michael)"
+  },
+  {
+    "idgroup": 3,
+    "name": "Astra Group",
+    "tickers": ["ASII", "UNTR", "AALI"],
+    "sectors": ["Otomotif", "Alat Berat", "Agribisnis"],
+    "keyPeople": "Jardine Matheson (Grup)"
+  },
+  {
+    "idgroup": 4,
+    "name": "Salim Group",
+    "tickers": ["INDF", "ICBP", "DNET"],
+    "sectors": ["Konsumer", "Ritel"],
+    "keyPeople": "Anthoni Salim"
+  },
+  {
+    "idgroup": 5,
+    "name": "Sinar Mas Group",
+    "tickers": ["BSDE", "DMAS", "TKIM", "INKP", "SMMA"],
+    "sectors": ["Properti", "Pulp & Paper", "Finansial"],
+    "keyPeople": "Keluarga Widjaja"
+  },
+  {
+    "idgroup": 6,
+    "name": "Grup Emtek",
+    "tickers": ["EMTK", "SCMA", "BUKA", "SAME"],
+    "sectors": ["Media", "Teknologi", "Kesehatan"],
+    "keyPeople": "Keluarga Sariaatmadja"
+  },
+  {
+    "idgroup": 7,
+    "name": "Grup Bayan",
+    "tickers": ["BYAN"],
+    "sectors": ["Batubara"],
+    "keyPeople": "Low Tuck Kwong"
+  },
+  {
+    "idgroup": 8,
+    "name": "Grup Jhonlin",
+    "tickers": ["JARR", "PGUN"],
+    "sectors": ["Perkebunan Sawit", "Energi"],
+    "keyPeople": "Haji Isam (Andi Syamsuddin Arsyad)"
+  },
+  {
+    "idgroup": 9,
+    "name": "Harita Group",
+    "tickers": ["NCKL", "CITA"],
+    "sectors": ["Pertambangan (Nikel, Bauksit)"],
+    "keyPeople": "Keluarga Lim (Lim Hariyanto W.S.)"
+  },
+  {
+    "idgroup": 10,
+    "name": "Adaro Group",
+    "tickers": ["ADRO", "ADMR", "ESSA"],
+    "sectors": ["Batubara", "Energi"],
+    "keyPeople": "Garibaldi Thohir & Edwin Soeryadjaya"
+  },
+  {
+    "idgroup": 11,
+    "name": "Triputra Group",
+    "tickers": ["TAPG", "ASSA", "DRMA"],
+    "sectors": ["Agribisnis", "Logistik", "Manufaktur"],
+    "keyPeople": "Theodore Permadi (T.P.) Rachmat"
+  },
+  {
+    "idgroup": 12,
+    "name": "Lippo Group",
+    "tickers": ["LPKR", "SILO", "MPPA"],
+    "sectors": ["Properti", "Kesehatan", "Ritel"],
+    "keyPeople": "Keluarga Riady (Mochtar Riady)"
+  },
+  {
+    "idgroup": 13,
+    "name": "CT Corp",
+    "tickers": ["MEGA", "BBHI"],
+    "sectors": ["Finansial", "Media", "Ritel"],
+    "keyPeople": "Chairul Tanjung"
+  },
+  {
+    "idgroup": 14,
+    "name": "Indika Group",
+    "tickers": ["INDY", "MBMA"],
+    "sectors": ["Energi", "Pertambangan"],
+    "keyPeople": "Keluarga Sudwikatmono (Agus Lasmono S.)"
+  },
+  {
+    "idgroup": 15,
+    "name": "Panin Group",
+    "tickers": ["PNBN", "PNLF", "PNIN"],
+    "sectors": ["Finansial (Perbankan, Asuransi)"],
+    "keyPeople": "Mu'min Ali Gunawan"
+  },
+  {
+    "idgroup": 16,
+    "name": "Gudang Garam Group",
+    "tickers": ["GGRM", "SURYA"],
+    "sectors": ["Konsumer (Rokok)"],
+    "keyPeople": "Keluarga Wonowidjojo (Susilo W.)"
+  },
+  {
+    "idgroup": 17,
+    "name": "Kalbe Group",
+    "tickers": ["KLBF"],
+    "sectors": ["Farmasi & Kesehatan"],
+    "keyPeople": "Keluarga Boenjamin Setiawan"
+  },
+  {
+    "idgroup": 18,
+    "name": "Alfa Group",
+    "tickers": ["AMRT", "MIDI"],
+    "sectors": ["Ritel Konsumer"],
+    "keyPeople": "Djoko Susanto"
+  },
+  {
+    "idgroup": 19,
+    "name": "Ciputra Group",
+    "tickers": ["CTRA", "CTRP", "CTRE"],
+    "sectors": ["Properti & Real Estate"],
+    "keyPeople": "Keluarga Ciputra"
+  },
+  {
+    "idgroup": 20,
+    "name": "Mayapada Group",
+    "tickers": ["MAYA", "SRAJ"],
+    "sectors": ["Finansial (Perbankan)", "Kesehatan"],
+    "keyPeople": "Tahir (Dato Sri Tahir)"
+  },
+  {
+    "idgroup": 21,
+    "name": "MNC Group",
+    "tickers": ["MNCN", "MSIN", "BHIT"],
+    "sectors": ["Media", "Jasa Keuangan", "Properti"],
+    "keyPeople": "Hary Tanoesoedibjo"
+  },
+  {
+    "idgroup": 22,
+    "name": "Bakrie Group",
+    "tickers": ["BUMI", "BRMS", "ELTY"],
+    "sectors": ["Energi", "Properti", "Infrastruktur"],
+    "keyPeople": "Keluarga Bakrie"
+  }
+]

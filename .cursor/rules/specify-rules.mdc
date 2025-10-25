@@ -1,0 +1,33 @@
+﻿# nagacacing Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2025-10-25
+
+## Active Technologies
+- Frontend TypeScript 5.x (Vite 5); Backend Node.js 20.x (TypeScript) + PixiJS 7.x (WebGL rendering), Zustand (state ringan), Zod (validasi `data.json`), color-scale utilities, date-fns; Backend: yahoo-finance2 (atau setara), AWS SDK S3 (R2 compatible), p-limit, zod, winston/pino (001-nagacacing-mvp-spec)
+- Cloudflare R2 (S3-compatible) untuk `data.json`; mapping grup manual `groups.json` di backend repo (001-nagacacing-mvp-spec)
+
+- [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION] + [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION] (001-nagacacing-mvp-spec)
+
+## Project Structure
+
+```text
+backend/
+frontend/
+tests/
+```
+
+## Commands
+
+cd src; pytest; ruff check .
+
+## Code Style
+
+[e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]: Follow standard conventions
+
+## Recent Changes
+- 001-nagacacing-mvp-spec: Added Frontend TypeScript 5.x (Vite 5); Backend Node.js 20.x (TypeScript) + PixiJS 7.x (WebGL rendering), Zustand (state ringan), Zod (validasi `data.json`), color-scale utilities, date-fns; Backend: yahoo-finance2 (atau setara), AWS SDK S3 (R2 compatible), p-limit, zod, winston/pino
+
+- 001-nagacacing-mvp-spec: Added [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION] + [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->

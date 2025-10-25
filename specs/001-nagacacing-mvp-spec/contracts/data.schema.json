@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nagacacing.com/schemas/data.schema.json",
+  "title": "NagaCacing DataResponse",
+  "type": "object",
+  "required": [
+    "version",
+    "generatedAt",
+    "dataDelayMinutes",
+    "dailyStory",
+    "groups",
+    "tickers",
+    "stats"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "dataDelayMinutes": { "type": "integer", "minimum": 0 },
+    "dailyStory": { "type": "string", "maxLength": 140 },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["groupId", "groupName", "tickers"],
+        "properties": {
+          "groupId": { "type": "string" },
+          "groupName": { "type": "string" },
+          "tickers": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "tickers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "symbol",
+          "name",
+          "price",
+          "changePct",
+          "volume",
+          "marketCap",
+          "sector"
+        ],
+        "properties": {
+          "symbol": { "type": "string" },
+          "name": { "type": "string" },
+          "price": { "type": "number" },
+          "changePct": { "type": "number" },
+          "volume": { "type": "integer", "minimum": 0 },
+          "marketCap": { "type": "integer", "minimum": 0 },
+          "groupId": { "type": ["string", "null"] },
+          "sector": { "type": "string" },
+          "spark7": {
+            "type": "array",
+            "maxItems": 7,
+            "items": { "type": "number" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "stats": {
+      "type": "object",
+      "required": [
+        "universeSize",
+        "volumeAvgWindowDays",
+        "minMarketCap",
+        "maxMarketCap"
+      ],
+      "properties": {
+        "universeSize": { "type": "integer", "minimum": 0 },
+        "volumeAvgWindowDays": { "type": "integer", "minimum": 1 },
+        "minMarketCap": { "type": "integer", "minimum": 0 },
+        "maxMarketCap": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
+

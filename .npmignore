@@ -1,0 +1,9 @@
+src/
+tests/
+*.log
+.env
+.env.local
+.DS_Store
+*.md
+.git
+.gitignore
